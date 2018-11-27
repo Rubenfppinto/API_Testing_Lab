@@ -1,5 +1,6 @@
 require 'httparty'
 require 'json'
+# require_relative 'generating_data.rb'
 
 class Postcodesio
   include HTTParty
@@ -42,6 +43,14 @@ class Postcodesio
 
   def get_valid_uk_country
     get_single_postcode['result']['country']
+  end
+
+  def get_longitude
+    get_single_postcode['result']['longitude']
+  end
+
+  def get_latitude
+    get_single_postcode['result']['latitude']
   end
 
 end
