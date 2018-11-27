@@ -22,5 +22,3 @@ class Postcodesio
 
 end
 
-status = Postcodesio.new
-puts status.get_status

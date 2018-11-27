@@ -13,6 +13,7 @@ describe Postcodesio do
     end
 
     it "should have a results hash" do
+      expect(@postcodesio.get_single_postcode).to be_a_kind_of(Hash)
     end
 
     it "should return a postcode between 5-7 in length"  do
