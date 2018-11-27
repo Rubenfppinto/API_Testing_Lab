@@ -20,5 +20,11 @@ class Postcodesio
     get_single_postcode['status']
   end
 
+  def get_postcode
+    get_single_postcode['result']['postcode']
+  end
+
+  
+
 end
 
