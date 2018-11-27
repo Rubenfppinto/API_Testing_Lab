@@ -51,8 +51,11 @@ class Postcodesio
   end
 
   def get_parliamentary_constituency
-    get_single_postcode['result'][parliamentary_constituency]
+    get_single_postcode['result']['parliamentary_constituency']
   end
 
+  def get_european_electoral_region
+    get_single_postcode['result']['european_electoral_region']
+  end
 end
 
