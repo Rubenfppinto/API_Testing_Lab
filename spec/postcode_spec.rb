@@ -6,10 +6,10 @@ describe Postcodesio do
 
     before(:all) do
       @postcodesio = Postcodesio.new
-      @response = @postcodesio.get_single_postcode('') #input a postcode
     end
 
     it "should respond with a status message of 200" do
+      expect(@postcodesio.get_status).to eq 200
     end
 
     it "should have a results hash" do
