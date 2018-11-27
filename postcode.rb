@@ -31,10 +31,6 @@ class Postcodesio
   def get_survey_eastings
     get_single_postcode['result']['eastings']
   end
-  
-  def get_survey_eastings
-    get_single_postcode['result']['eastings']
-  end
 
   def get_survey_northings
     get_single_postcode['result']['northings']
@@ -43,5 +39,10 @@ class Postcodesio
   def get_nhs_ha
     get_single_postcode['result']['nhs_ha']
   end
+
+  def get_valid_uk_country
+    get_single_postcode['result']['country']
+  end
+
 end
 

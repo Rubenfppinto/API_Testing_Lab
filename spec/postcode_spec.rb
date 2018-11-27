@@ -33,6 +33,7 @@ describe Postcodesio do
     end
 
     it "should return a country which is one of the four constituent countries of the UK" do
+      expect(@postcodesio.get_valid_uk_country).to eq 'England' or 'Scotland' or 'Wales' or 'Ireland'
     end
 
     it "should return a string value for NHS authority " do
