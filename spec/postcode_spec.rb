@@ -41,9 +41,11 @@ describe Postcodesio do
     end
 
     it "should return a longitude float value" do
+      expect(@postcodesio.get_longitude).to be_a_kind_of(Float)
     end
 
     it "should return a latitude float value" do
+      expect(@postcodesio.get_latitude).to be_a_kind_of(Float)
     end
 
     it "should return a parliamentary constituency string" do
