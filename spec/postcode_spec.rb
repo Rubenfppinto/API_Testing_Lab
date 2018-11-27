@@ -37,6 +37,7 @@ describe Postcodesio do
     end
 
     it "should return a string value for NHS authority " do
+      
     end
 
     it "should return a longitude float value" do

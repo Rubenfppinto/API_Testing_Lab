@@ -44,5 +44,6 @@ class Postcodesio
     get_single_postcode['result']['country']
   end
 
+
 end
 
