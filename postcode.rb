@@ -24,7 +24,9 @@ class Postcodesio
     get_single_postcode['result']['postcode']
   end
 
+  def get_quality
+    get_single_postcode['result']['quality']
+  end
   
-
 end
 
