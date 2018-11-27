@@ -40,5 +40,8 @@ class Postcodesio
     get_single_postcode['result']['northings']
   end
 
+  def get_nhs_ha
+    get_single_postcode['result']['nhs_ha']
+  end
 end
 

@@ -36,6 +36,7 @@ describe Postcodesio do
     end
 
     it "should return a string value for NHS authority " do
+      expect(@postcodesio.get_nhs_ha).to be_a_kind_of(String)
     end
 
     it "should return a longitude float value" do
