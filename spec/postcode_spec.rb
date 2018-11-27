@@ -21,12 +21,15 @@ describe Postcodesio do
     end
 
     it "should return an quality key integer between 1-9" do
+      expect(@postcodesio.get_quality).to be_between(1,9).inclusive
     end
 
     it "should return an ordnance survey eastings value as integer" do
+      expect(@postcodesio.get_survey_eastings).to be_a_kind_of(Integer)
     end
 
-    it "should return an ordnance survey eastings value as integer" do
+    it "should return an ordnance survey northings value as integer" do
+      expect(@postcodesio.get_survey_northings).to be_a_kind_of(Integer)
     end
 
     it "should return a country which is one of the four constituent countries of the UK" do

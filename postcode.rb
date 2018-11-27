@@ -27,6 +27,18 @@ class Postcodesio
   def get_quality
     get_single_postcode['result']['quality']
   end
+
+  def get_survey_eastings
+    get_single_postcode['result']['eastings']
+  end
   
+  def get_survey_eastings
+    get_single_postcode['result']['eastings']
+  end
+
+  def get_survey_northings
+    get_single_postcode['result']['northings']
+  end
+
 end
 
