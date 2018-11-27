@@ -1,13 +1,10 @@
 require 'httparty'
 require 'json'
-# require_relative 'generating_data.rb'
 
 class Postcodesio
   include HTTParty
 
   base_uri 'https://api.postcodes.io'
-
-  # attr_accessor :single_postcode_results, :multiple_postcode_result
 
   def get_single_postcode
     JSON.parse(self.class.get("/postcodes/KT65DL").body)
@@ -51,6 +48,10 @@ class Postcodesio
 
   def get_latitude
     get_single_postcode['result']['latitude']
+  end
+
+  def get_parliamentary_constituency
+    get_single_postcode['result'][parliamentary_constituency]
   end
 
 end
