@@ -40,5 +40,9 @@ class Postcodesio
     get_single_postcode['result']['northings']
   end
 
+  def get_valid_uk_country
+    get_single_postcode['result']['country']
+  end
+
 end
 
