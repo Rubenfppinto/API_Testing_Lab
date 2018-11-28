@@ -1,6 +1,0 @@
-
-
-# class GeneratePostcodes
-    
-
-# end

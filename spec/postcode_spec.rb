@@ -49,34 +49,41 @@ describe Postcodesio do
     end
 
     it "should return a parliamentary constituency string" do
+      expect(@postcodesio.get_parliamentary_constituency).to be_a_kind_of(String)
     end
 
     it "should return a european_electoral_region string" do
+      expect(@postcodesio.get_european_electoral_region).to be_a_kind_of(String)
     end
 
     it "should return a primary_care_trust string" do
+      expect(@postcodesio.get_primary_care_trust).to be_a_kind_of(String)
     end
 
     it "should return a region string" do
+      expect(@postcodesio.get_region).to be_a_kind_of(String)
     end
 
     it "should return a parish string" do
+      expect(@postcodesio.get_parish).to be_a_kind_of(String)
     end
 
     it "should return a lsoa string" do
+      expect(@postcodesio.get_lsoa).to be_a_kind_of(String)
     end
 
     it "should return a msoa string" do
+      expect(@postcodesio.get_msoa).to be_a_kind_of(String)
     end
     # admin ward and county are not documented however tested below
 
     it "should return a admin_district string" do
+      expect(@postcodesio.get_admin_district).to be_a_kind_of(String)
     end
 
     it "should return a incode string of three characters" do
-    end
-
-    it "should return a msoa string" do
+      expect(@postcodesio.get_incode).to be_a_kind_of(String)
+      expect(@postcodesio.get_incode.length).to eq 3
     end
 
     it "should return a incode string of 3-4 characters" do
@@ -87,7 +94,6 @@ describe Postcodesio do
 
     before(:all) do
       @postcodesio = Postcodesio.new
-      @response = @postcodesio.get_multiple_postcodes() #Add in array of postcodes
     end
 
     it "should respond with a status message of 200" do
@@ -154,13 +160,7 @@ describe Postcodesio do
     it "should return a incode string of three characters" do
     end
 
-    it "should return a msoa string" do
-    end
-
     it "should return a incode string of 3-4 characters" do
-    end
-
-    it "should have a results hash" do
     end
 
     it "should return a postcode between 5-7 in length"  do
